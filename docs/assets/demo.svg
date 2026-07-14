@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="400" viewBox="0 0 720 400" font-family="Menlo, Consolas, monospace" font-size="14">
+  <rect width="720" height="400" rx="10" fill="#101418"/>
+  <circle cx="24" cy="22" r="6" fill="#ff5f56"/>
+  <circle cx="44" cy="22" r="6" fill="#ffbd2e"/>
+  <circle cx="64" cy="22" r="6" fill="#27c93f"/>
+  <text x="360" y="27" fill="#8b949e" text-anchor="middle" font-size="12">clipwarp — remote shell, local clipboard</text>
+  <g fill="#c9d1d9">
+    <text x="24" y="58"><tspan fill="#8b949e">laptop$</tspan> ssh build-box</text>
+    <text x="24" y="80"><tspan fill="#8b949e">build-box$</tspan> screen -r ops</text>
+    <text x="24" y="102"><tspan fill="#8b949e">build-box$</tspan> tmux attach</text>
+    <text x="24" y="134"><tspan fill="#7ee787">$</tspan> clipwarp caps</text>
+    <text x="24" y="156"><tspan fill="#8b949e">terminal       unknown (via TERM=tmux-256color)</tspan></text>
+    <text x="24" y="176"><tspan fill="#8b949e">osc52          </tspan><tspan fill="#d2a8ff">probably</tspan></text>
+    <text x="24" y="196"><tspan fill="#8b949e">multiplexer    </tspan><tspan fill="#56d4dd">tmux,screen</tspan><tspan fill="#8b949e">   wrap needed  </tspan><tspan fill="#56d4dd">true</tspan><tspan fill="#8b949e">   ssh  </tspan><tspan fill="#56d4dd">true</tspan></text>
+    <text x="24" y="228"><tspan fill="#7ee787">$</tspan> git diff | clipwarp copy</text>
+    <text x="24" y="250"><tspan fill="#3fb950">✔</tspan> <tspan fill="#8b949e">double-wrapped, OSC 52 rides ssh home — now ⌘V locally</tspan></text>
+    <text x="24" y="282"><tspan fill="#7ee787">$</tspan> clipwarp copy -verbose big.log</text>
+    <text x="24" y="304"><tspan fill="#8b949e">clipwarp: target=c payload=54211 sequence=72292 budget=100000</tspan></text>
+    <text x="24" y="324"><tspan fill="#8b949e">mux=</tspan><tspan fill="#56d4dd">tmux,screen</tspan><tspan fill="#8b949e"> wrapped=74000 </tspan><tspan fill="#d2a8ff">chunks=283</tspan><tspan fill="#8b949e"> truncated=false</tspan></text>
+    <text x="24" y="356"><tspan fill="#7ee787">$</tspan> clipwarp paste</text>
+    <text x="24" y="378"><tspan fill="#e3b341">deploy failed: connection reset by peer</tspan></text>
+  </g>
+</svg>
